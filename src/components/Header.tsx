@@ -29,7 +29,9 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        solid
+        open
+          ? "bottom-0 bg-primary text-primary-foreground"
+          : solid
           ? "bg-background/85 backdrop-blur-md border-b border-border/60"
           : "bg-background/95 backdrop-blur-md border-b border-border/60 lg:bg-transparent lg:backdrop-blur-0 lg:border-transparent"
       }`}
@@ -77,7 +79,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-50 bg-primary text-primary-foreground shadow-2xl animate-fade-in">
+        <div className="absolute inset-0 z-50 bg-primary text-primary-foreground shadow-2xl animate-fade-in">
           <div className="absolute inset-0 bg-primary" />
           <div className="container-luxe relative flex items-center justify-between h-24 border-b border-primary-foreground/15">
             <img src={logoWhite} alt="Oxford Venture Inc." className="h-[4.5rem] w-auto" />
