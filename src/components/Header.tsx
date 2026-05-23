@@ -31,16 +31,19 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         solid
           ? "bg-background/85 backdrop-blur-md border-b border-border/60"
-          : "bg-transparent"
+          : "bg-background/95 backdrop-blur-md border-b border-border/60 lg:bg-transparent lg:backdrop-blur-0 lg:border-transparent"
       }`}
     >
       <div className="container-luxe flex items-center justify-between h-24">
         <Link to="/" className="flex items-center">
-          <img
-            src={solid ? logoBlue : logoWhite}
-            alt="Oxford Venture Inc."
-            className="h-16 md:h-20 w-auto"
-          />
+          {solid ? (
+            <img src={logoBlue} alt="Oxford Venture Inc." className="h-16 md:h-20 w-auto" />
+          ) : (
+            <>
+              <img src={logoBlue} alt="Oxford Venture Inc." className="h-16 md:h-20 w-auto lg:hidden" />
+              <img src={logoWhite} alt="Oxford Venture Inc." className="hidden h-16 md:h-20 w-auto lg:block" />
+            </>
+          )}
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
@@ -67,7 +70,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         <button
           onClick={() => setOpen(true)}
           aria-label="Open menu"
-          className={`lg:hidden p-2 ${solid ? "text-primary" : "text-primary-foreground"}`}
+          className={`lg:hidden p-2 ${solid ? "text-primary" : "text-primary lg:text-primary-foreground"}`}
         >
           <Menu size={22} />
         </button>
