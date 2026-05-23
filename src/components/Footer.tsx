@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Linkedin, Facebook, Mail, Phone } from "lucide-react";
+import logoWhite from "@/assets/logo-white.png";
 
 export function Footer() {
   return (
@@ -7,7 +8,7 @@ export function Footer() {
       <div className="container-luxe py-20">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <div className="font-display text-3xl mb-4 text-primary-foreground">Oxford Venture Inc.</div>
+            <img src={logoWhite} alt="Oxford Venture Inc." className="h-20 md:h-24 w-auto mb-6" />
             <p className="text-primary-foreground/70 max-w-md leading-relaxed text-sm">
               Personalized academic mentorship, university pathway planning, and
               STEAM enrichment for ambitious students and the families who believe in them.

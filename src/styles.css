@@ -50,11 +50,11 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.22 0.005 270);
 
-  --primary: oklch(0.24 0.05 250);                /* #11263C deep navy */
+  --primary: oklch(0.46 0.14 248);                /* deeper variant of #2579C0 */
   --primary-foreground: oklch(0.98 0.005 80);
 
   --secondary: oklch(0.83 0.04 75);               /* #D9C3A5 warm sand */
-  --secondary-foreground: oklch(0.24 0.05 250);
+  --secondary-foreground: oklch(0.46 0.14 248);
 
   --muted: oklch(0.94 0.005 80);
   --muted-foreground: oklch(0.45 0.01 270);
@@ -70,7 +70,7 @@
 
   --border: oklch(0.88 0.01 80);
   --input: oklch(0.88 0.01 80);
-  --ring: oklch(0.24 0.05 250);
+  --ring: oklch(0.46 0.14 248);
 }
 
 .dark {
