@@ -70,11 +70,11 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         </div>
 
         <button
-          onClick={() => setOpen(true)}
-          aria-label="Open menu"
+          onClick={() => setOpen((value) => !value)}
+          aria-label={open ? "Close menu" : "Open menu"}
           className={`lg:hidden p-2 ${solid ? "text-primary" : "text-primary lg:text-primary-foreground"}`}
         >
-          <Menu size={22} />
+          {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
