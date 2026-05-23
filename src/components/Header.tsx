@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoBlue from "@/assets/logo.png";
+import logoWhite from "@/assets/logo-white.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -32,18 +34,13 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
           : "bg-transparent"
       }`}
     >
-      <div className="container-luxe flex items-center justify-between h-20">
-        <Link to="/" className="flex items-baseline gap-2">
-          <span
-            className={`font-display text-2xl tracking-tight ${
-              solid ? "text-primary" : "text-primary-foreground"
-            }`}
-          >
-            Oxford Venture
-          </span>
-          <span className="hidden sm:inline text-[10px] tracking-[0.3em] uppercase text-gold">
-            Inc.
-          </span>
+      <div className="container-luxe flex items-center justify-between h-24">
+        <Link to="/" className="flex items-center">
+          <img
+            src={solid ? logoBlue : logoWhite}
+            alt="Oxford Venture Inc."
+            className="h-16 md:h-20 w-auto"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
@@ -78,8 +75,8 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
 
       {open && (
         <div className="fixed inset-0 z-50 bg-primary text-primary-foreground animate-fade-in">
-          <div className="container-luxe flex items-center justify-between h-20">
-            <span className="font-display text-2xl">Oxford Venture</span>
+          <div className="container-luxe flex items-center justify-between h-24">
+            <img src={logoWhite} alt="Oxford Venture Inc." className="h-16 w-auto" />
             <button onClick={() => setOpen(false)} aria-label="Close menu" className="p-2">
               <X size={22} />
             </button>
