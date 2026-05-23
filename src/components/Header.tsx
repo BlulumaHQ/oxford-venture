@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import { Menu, X } from "lucide-react";
 import logoBlue from "@/assets/logo.png";
 import logoWhite from "@/assets/logo-white.png";
@@ -16,11 +15,8 @@ const nav = [
 
 export function Header({ transparent = false }: { transparent?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -31,14 +27,13 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        open
-          ? "bg-transparent"
-          : solid
+      className={`site-header fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        solid
           ? "bg-background/85 backdrop-blur-md border-b border-border/60"
           : "bg-background/95 backdrop-blur-md border-b border-border/60 lg:bg-transparent lg:backdrop-blur-0 lg:border-transparent"
       }`}
     >
+      <input id="mobile-menu-toggle" type="checkbox" className="mobile-menu-toggle sr-only lg:hidden" />
       <div className="container-luxe flex items-center justify-between h-24">
         <Link to="/" className="flex items-center">
           {solid ? (
@@ -72,42 +67,38 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
           </Link>
         </div>
 
-        <button
-          onClick={() => setOpen(true)}
+        <label
+          htmlFor="mobile-menu-toggle"
           aria-label="Open menu"
-          className={`lg:hidden p-2 ${solid ? "text-primary" : "text-primary lg:text-primary-foreground"}`}
+          className={`lg:hidden p-2 cursor-pointer ${solid ? "text-primary" : "text-primary lg:text-primary-foreground"}`}
         >
           <Menu size={22} />
-        </button>
+        </label>
       </div>
 
-      {mounted && open && createPortal(
-        <div className="fixed inset-0 z-[60] bg-primary text-primary-foreground shadow-2xl animate-fade-in lg:hidden">
+        <div className="mobile-menu-panel absolute inset-0 z-[60] bg-primary text-primary-foreground shadow-2xl lg:hidden">
           <div className="absolute inset-0 bg-primary" />
           <div className="container-luxe relative flex items-center justify-between h-24 border-b border-primary-foreground/15">
             <img src={logoWhite} alt="Oxford Venture Inc." className="h-[4.5rem] w-auto" />
-            <button onClick={() => setOpen(false)} aria-label="Close menu" className="p-2">
+            <label htmlFor="mobile-menu-toggle" aria-label="Close menu" className="p-2 cursor-pointer">
               <X size={22} />
-            </button>
+            </label>
           </div>
           <nav className="container-luxe relative flex flex-col gap-5 mt-10">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
-                onClick={() => setOpen(false)}
                 className="font-display text-3xl font-semibold text-primary-foreground"
               >
                 {item.label}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setOpen(false)} className="mt-6 btn-primary bg-gold border-gold text-gold-foreground">
+            <Link to="/contact" className="mt-6 btn-primary bg-gold border-gold text-gold-foreground">
               Book Consultation
             </Link>
           </nav>
-        </div>,
-        document.body,
-      )}
+        </div>
     </header>
   );
 }
