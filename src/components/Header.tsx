@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { Menu, X } from "lucide-react";
 import logoBlue from "@/assets/logo.png";
 import logoWhite from "@/assets/logo-white.png";
@@ -16,8 +17,10 @@ const nav = [
 export function Header({ transparent = false }: { transparent?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -78,8 +81,8 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         </button>
       </div>
 
-      {open && (
-        <div className="fixed inset-0 z-50 bg-primary text-primary-foreground shadow-2xl animate-fade-in">
+      {mounted && open && createPortal(
+        <div className="fixed inset-0 z-[60] bg-primary text-primary-foreground shadow-2xl animate-fade-in lg:hidden">
           <div className="absolute inset-0 bg-primary" />
           <div className="container-luxe relative flex items-center justify-between h-24 border-b border-primary-foreground/15">
             <img src={logoWhite} alt="Oxford Venture Inc." className="h-[4.5rem] w-auto" />
@@ -102,7 +105,8 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
               Book Consultation
             </Link>
           </nav>
-        </div>
+        </div>,
+        document.body,
       )}
     </header>
   );
