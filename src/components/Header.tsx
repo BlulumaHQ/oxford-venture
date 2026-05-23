@@ -74,25 +74,26 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-50 bg-primary text-primary-foreground animate-fade-in">
-          <div className="container-luxe flex items-center justify-between h-24">
-            <img src={logoWhite} alt="Oxford Venture Inc." className="h-16 w-auto" />
+        <div className="fixed inset-0 z-50 bg-primary text-primary-foreground shadow-2xl animate-fade-in">
+          <div className="absolute inset-0 bg-primary" />
+          <div className="container-luxe relative flex items-center justify-between h-24 border-b border-primary-foreground/15">
+            <img src={logoWhite} alt="Oxford Venture Inc." className="h-18 w-auto" />
             <button onClick={() => setOpen(false)} aria-label="Close menu" className="p-2">
               <X size={22} />
             </button>
           </div>
-          <nav className="container-luxe flex flex-col gap-6 mt-12">
+          <nav className="container-luxe relative flex flex-col gap-5 mt-10">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="font-display text-4xl text-primary-foreground"
+                className="font-display text-3xl font-semibold text-primary-foreground"
               >
                 {item.label}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setOpen(false)} className="mt-8 btn-primary bg-gold border-gold text-gold-foreground">
+            <Link to="/contact" onClick={() => setOpen(false)} className="mt-6 btn-primary bg-gold border-gold text-gold-foreground">
               Book Consultation
             </Link>
           </nav>
