@@ -30,7 +30,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         open
-          ? "bottom-0 bg-primary text-primary-foreground"
+          ? "bg-transparent"
           : solid
           ? "bg-background/85 backdrop-blur-md border-b border-border/60"
           : "bg-background/95 backdrop-blur-md border-b border-border/60 lg:bg-transparent lg:backdrop-blur-0 lg:border-transparent"
@@ -70,16 +70,16 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         </div>
 
         <button
-          onClick={() => setOpen((value) => !value)}
-          aria-label={open ? "Close menu" : "Open menu"}
+          onClick={() => setOpen(true)}
+          aria-label="Open menu"
           className={`lg:hidden p-2 ${solid ? "text-primary" : "text-primary lg:text-primary-foreground"}`}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          <Menu size={22} />
         </button>
       </div>
 
       {open && (
-        <div className="absolute inset-0 z-50 bg-primary text-primary-foreground shadow-2xl animate-fade-in">
+        <div className="fixed inset-0 z-50 bg-primary text-primary-foreground shadow-2xl animate-fade-in">
           <div className="absolute inset-0 bg-primary" />
           <div className="container-luxe relative flex items-center justify-between h-24 border-b border-primary-foreground/15">
             <img src={logoWhite} alt="Oxford Venture Inc." className="h-[4.5rem] w-auto" />
