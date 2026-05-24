@@ -86,19 +86,17 @@ function ProgramsPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo1})` }}>
+      <section className="relative overflow-hidden py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo1})` }}>
+        <img
+          src={bgGeoCorner}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute top-0 right-0 w-[42%] max-w-[560px] opacity-90 select-none"
+        />
         <div className="container-luxe space-y-24 md:space-y-32">
           {programs.map((p, i) => (
             <Reveal key={p.title}>
               <article className={`relative grid lg:grid-cols-12 gap-10 lg:gap-16 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
-                {i === 0 && (
-                  <img
-                    src={bgGeoCorner}
-                    alt=""
-                    aria-hidden="true"
-                    className="pointer-events-none absolute -top-16 right-0 w-[55%] max-w-[720px] opacity-90 select-none"
-                  />
-                )}
                 <div className="lg:col-span-7">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img src={p.img} alt={p.title} loading="lazy" className="w-full h-full object-cover" />
