@@ -55,8 +55,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Oxford Venture Inc. — Premium Academic Mentorship & University Pathways" },
       { name: "twitter:description", content: "Personalized academic mentorship, university pathway planning, tutoring, and STEAM programs for ambitious students. Trusted by families across Canada, the U.S., and the U.K." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/91f394e0-b9b8-4b60-ba32-08b94f2d1838/id-preview-fa8842af--12fa09db-c90d-4fa6-ad98-311887b3b841.lovable.app-1779574360911.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/91f394e0-b9b8-4b60-ba32-08b94f2d1838/id-preview-fa8842af--12fa09db-c90d-4fa6-ad98-311887b3b841.lovable.app-1779574360911.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/bCCMipaZMMgU3uzBQ48gKBgft2r2/social-images/social-1779586197980-Screenshot_316.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/bCCMipaZMMgU3uzBQ48gKBgft2r2/social-images/social-1779586197980-Screenshot_316.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
