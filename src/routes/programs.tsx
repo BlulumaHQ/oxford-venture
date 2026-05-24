@@ -10,6 +10,7 @@ import steamImg from "@/assets/steam.jpg";
 import teacherImg from "@/assets/teacher-training.jpg";
 import libraryImg from "@/assets/library.jpg";
 import bgGeo1 from "@/assets/bg-geo-1.jpg";
+import bgGeoCorner from "@/assets/bg-geo-corner.jpg";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
@@ -89,7 +90,15 @@ function ProgramsPage() {
         <div className="container-luxe space-y-24 md:space-y-32">
           {programs.map((p, i) => (
             <Reveal key={p.title}>
-              <article className={`grid lg:grid-cols-12 gap-10 lg:gap-16 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
+              <article className={`relative grid lg:grid-cols-12 gap-10 lg:gap-16 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
+                {i === 0 && (
+                  <img
+                    src={bgGeoCorner}
+                    alt=""
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -top-16 right-0 w-[55%] max-w-[720px] opacity-90 select-none"
+                  />
+                )}
                 <div className="lg:col-span-7">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img src={p.img} alt={p.title} loading="lazy" className="w-full h-full object-cover" />
