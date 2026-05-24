@@ -11,6 +11,7 @@ import steamImg from "@/assets/steam.jpg";
 import universityImg from "@/assets/university.jpg";
 import teacherImg from "@/assets/teacher-training.jpg";
 import libraryImg from "@/assets/library.jpg";
+import bgGeo1 from "@/assets/bg-geo-1.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -140,7 +141,7 @@ function HomePage() {
       </section>
 
       {/* TRUST */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo1})` }}>
         <div className="container-luxe">
           <SectionHeading
             eyebrow="Why families choose us"

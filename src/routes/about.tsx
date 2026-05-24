@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import founderImg from "@/assets/founder.jpg";
 import graduationImg from "@/assets/graduation.jpg";
 import mentorshipImg from "@/assets/mentorship.jpg";
+import bgGeo2 from "@/assets/bg-geo-2.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -43,7 +44,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo2})` }}>
         <div className="container-luxe grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           <Reveal className="lg:col-span-5 lg:sticky lg:top-28">
             <img src={founderImg} alt="Katherine Chiang Martin, Founder" loading="lazy" className="w-full aspect-[4/5] object-cover" />

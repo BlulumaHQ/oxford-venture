@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import campusImg from "@/assets/campus.jpg";
 import universityImg from "@/assets/university.jpg";
 import mentorshipImg from "@/assets/mentorship.jpg";
+import bgGeo1 from "@/assets/bg-geo-1.jpg";
 
 export const Route = createFileRoute("/university-pathways")({
   head: () => ({
@@ -55,7 +56,7 @@ function UniversityPathwaysPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo1})` }}>
         <div className="container-luxe">
           <SectionHeading
             eyebrow="Our approach"
