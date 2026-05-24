@@ -9,6 +9,7 @@ import mentorshipImg from "@/assets/mentorship.jpg";
 import steamImg from "@/assets/steam.jpg";
 import teacherImg from "@/assets/teacher-training.jpg";
 import libraryImg from "@/assets/library.jpg";
+import bgGeo1 from "@/assets/bg-geo-1.jpg";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
@@ -84,7 +85,7 @@ function ProgramsPage() {
         </div>
       </section>
 
-      <section className="pb-24 md:pb-32 bg-background">
+      <section className="pb-24 md:pb-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo1})` }}>
         <div className="container-luxe space-y-24 md:space-y-32">
           {programs.map((p, i) => (
             <Reveal key={p.title}>

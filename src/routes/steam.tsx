@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 import steamImg from "@/assets/steam.jpg";
 import teacherImg from "@/assets/teacher-training.jpg";
+import bgGeo2 from "@/assets/bg-geo-2.jpg";
 
 export const Route = createFileRoute("/steam")({
   head: () => ({
@@ -55,7 +56,7 @@ function SteamPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo2})` }}>
         <div className="container-luxe">
           <SectionHeading
             eyebrow="What we cultivate"

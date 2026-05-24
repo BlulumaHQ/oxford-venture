@@ -4,6 +4,7 @@ import { PageShell } from "@/components/Shared";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Phone, Mail, MapPin, Check } from "lucide-react";
+import bgGeo2 from "@/assets/bg-geo-2.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -150,7 +151,7 @@ function ContactPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-muted/40">
+      <section className="py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo2})` }}>
         <div className="container-luxe">
           <SectionHeading eyebrow="Frequently asked" title="Questions families often ask." />
           <div className="mt-14 max-w-3xl divide-y divide-border border-y border-border">
