@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 
 import founderImg from "@/assets/founder.jpg";
-import libraryImg from "@/assets/library.jpg";
+import graduationImg from "@/assets/graduation.jpg";
 import mentorshipImg from "@/assets/mentorship.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -31,7 +31,7 @@ function AboutPage() {
   return (
     <PageShell transparentHeader>
       <section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
-        <img src={libraryImg} alt="Classical library interior" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <img src={graduationImg} alt="Students celebrating graduation, throwing caps into the sky" className="absolute inset-0 w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary/75 to-primary" />
         <div className="relative container-luxe pt-44 md:pt-52 pb-28 md:pb-36">
           <div className="max-w-3xl">
