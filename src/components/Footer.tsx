@@ -42,7 +42,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={14} className="text-gold" />
-                <a href="mailto:hello@oxfordventure.com" className="link-underline">hello@oxfordventure.com</a>
+                <a href="mailto:info@educationbc.ca" className="link-underline">info@educationbc.ca</a>
               </li>
             </ul>
             <div className="flex gap-3 mt-4">
