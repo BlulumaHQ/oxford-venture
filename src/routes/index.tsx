@@ -44,7 +44,7 @@ const trustCards = [
 const journey = [
   ["01", "Consultation & Assessment", "An in-depth conversation to understand the student and family vision."],
   ["02", "Academic Goal Planning", "Clear, structured goals that align with the student's strengths and ambitions."],
-  ["03", "Personalized Learning Strategy", "A bespoke roadmap of subjects, mentors, and milestones."],
+  ["03", "Personalized Learning Strategy", "A customized roadmap of subjects, mentors, and milestones."],
   ["04", "Tutoring & Skill Development", "One-on-one mentorship that builds confidence and academic depth."],
   ["05", "University Preparation", "Application strategy, essays, and personal profile development."],
   ["06", "Future Success", "A student ready for university, leadership, and lifelong opportunity."],
