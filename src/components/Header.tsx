@@ -36,14 +36,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
       <input id="mobile-menu-toggle" type="checkbox" className="mobile-menu-toggle sr-only lg:hidden" />
       <div className="container-luxe flex items-center justify-between h-24">
         <Link to="/" className="flex items-center">
-          {solid ? (
-            <img src={logoBlue} alt="Oxford Venture Inc." className="h-16 md:h-20 w-auto" />
-          ) : (
-            <>
-              <img src={logoBlue} alt="Oxford Venture Inc." className="h-16 md:h-20 w-auto lg:hidden" />
-              <img src={logoWhite} alt="Oxford Venture Inc." className="hidden h-16 md:h-20 w-auto lg:block" />
-            </>
-          )}
+          <img src={logoWhite} alt="Oxford Venture Inc." className="h-16 md:h-20 w-auto" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
