@@ -58,7 +58,20 @@ export function Footer() {
 
         <div className="mt-8 md:mt-12 pt-5 border-t border-primary-foreground/15 flex flex-col md:flex-row justify-between gap-2 text-xs text-primary-foreground/55 tracking-wider">
           <span>© 2026 Oxford Venture Inc. All rights reserved.</span>
-          <span>Vancouver, British Columbia · Canada</span>
+          <span className="flex flex-col md:flex-row gap-2 md:gap-4">
+            <span>Vancouver, British Columbia · Canada</span>
+            <span>
+              Web Design by{" "}
+              <a
+                href="https://Bluluma.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold transition-colors link-underline"
+              >
+                Bluluma.com
+              </a>
+            </span>
+          </span>
         </div>
       </div>
     </footer>
