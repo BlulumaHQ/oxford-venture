@@ -1,31 +1,30 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, ConsultationCTA } from "@/components/Shared";
 import { Reveal } from "@/components/Reveal";
-import { SectionHeading } from "@/components/SectionHeading";
 import { ArrowRight } from "lucide-react";
 
 import universityImg from "@/assets/university.jpg";
 import mentorshipImg from "@/assets/mentorship.jpg";
 import steamImg from "@/assets/steam.jpg";
 import teacherImg from "@/assets/teacher-training.jpg";
-import libraryImg from "@/assets/library.jpg";
+import campusImg from "@/assets/campus.jpg";
 import bgGeo1 from "@/assets/bg-geo-1.jpg";
 import bgGeoCorner from "@/assets/bg-geo-corner.jpg";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
     meta: [
-      { title: "Programs — Oxford Venture Inc." },
+      { title: "Programs & Services — Oxford Venture Inc." },
       {
         name: "description",
         content:
-          "University guidance, academic mentorship, STEAM programs, teacher training, and seasonal enrichment programs designed for ambitious students.",
+          "International student programs, teacher professional development, principal leadership training, educational study tours, and international educator exchange programs across British Columbia.",
       },
-      { property: "og:title", content: "Programs — Oxford Venture Inc." },
+      { property: "og:title", content: "Programs & Services — Oxford Venture Inc." },
       {
         property: "og:description",
         content:
-          "Personalized programs across mentorship, university planning, STEAM, and teacher certification.",
+          "Five program areas connecting global students, educators, school leaders, and organizations with Canadian educational experiences.",
       },
       { property: "og:image", content: universityImg },
     ],
@@ -36,62 +35,81 @@ export const Route = createFileRoute("/programs")({
 const programs = [
   {
     img: universityImg,
-    eyebrow: "01 · Pathways",
-    title: "University Guidance",
-    body: "End-to-end planning for Canadian, U.S., and U.K. university admissions. We work with students from early high school through final decisions, building thoughtful applications that reflect who they truly are.",
+    eyebrow: "01 · Students",
+    title: "International Student Programs",
+    body: "Oxford Venture Inc. offers a variety of student-focused educational experiences designed to help participants improve language skills, develop cultural understanding, and experience life within Canada's world-renowned education system.",
     points: [
-      "Personalized university list",
-      "Academic and extracurricular strategy",
-      "Essay & personal statement coaching",
-      "Interview preparation",
-    ],
-  },
-  {
-    img: mentorshipImg,
-    eyebrow: "02 · Mentorship",
-    title: "Academic Mentorship & Tutoring",
-    body: "One-on-one mentorship that goes beyond marks. Our educators help students develop study habits, intellectual curiosity, and the confidence to lead their own learning.",
-    points: [
-      "Subject-specific tutoring",
-      "Study skills and time management",
-      "Confidence & self-direction",
-      "Long-term mentorship relationships",
-    ],
-  },
-  {
-    img: steamImg,
-    eyebrow: "03 · Enrichment",
-    title: "STEAM Programs",
-    body: "Sophisticated STEAM programming designed to cultivate innovation, design thinking, and collaborative problem-solving — preparing students for the disciplines shaping the next century.",
-    points: [
-      "Design and engineering studios",
-      "Research-led inquiry",
-      "Cross-disciplinary projects",
-      "Leadership through innovation",
+      "Short-Term Study Programs",
+      "Summer Programs",
+      "Winter Programs",
+      "School Integration Programs",
+      "Homestay Placement",
+      "Cultural Activities",
+      "Airport Reception",
+      "Student Support Services",
     ],
   },
   {
     img: teacherImg,
-    eyebrow: "04 · Training",
-    title: "Teacher Training & Certification",
-    body: "Professional development for educators seeking to deepen their STEAM teaching practice and integrate Canadian curriculum standards.",
+    eyebrow: "02 · Educators",
+    title: "Teacher Professional Development",
+    body: "Customized professional development programs designed for international educators seeking practical insights into British Columbia's education system and modern teaching practices.",
     points: [
-      "STEAM teaching methodology",
-      "B.C. curriculum integration",
-      "Educational leadership",
-      "Canadian certification pathways",
+      "Classroom Observation",
+      "Inquiry-Based Learning",
+      "BC Curriculum Framework",
+      "Assessment & Evaluation",
+      "Classroom Management",
+      "Inclusive Education",
+      "STEAM Education",
+      "Educational Technology Integration",
     ],
   },
   {
-    img: libraryImg,
-    eyebrow: "05 · Seasonal",
-    title: "Summer & Winter Programs",
-    body: "Immersive short-term programs that combine academic enrichment with cultural exposure, leadership development, and meaningful peer connection.",
+    img: mentorshipImg,
+    eyebrow: "03 · Leadership",
+    title: "Principal & School Leadership Development",
+    body: "Leadership-focused programs for principals, vice principals, school administrators, and educational leaders interested in learning from Canadian educational leadership models.",
     points: [
-      "Summer academies",
-      "Winter intensives",
-      "Canadian education pathways",
-      "International student programs",
+      "Educational Leadership",
+      "Strategic Planning",
+      "School Improvement Initiatives",
+      "Staff Development",
+      "Student Success Strategies",
+      "Change Management",
+      "Innovation in Education",
+      "District Leadership Models",
+    ],
+  },
+  {
+    img: campusImg,
+    eyebrow: "04 · Delegations",
+    title: "Educational Study Tours & Delegations",
+    body: "Oxford Venture Inc. organizes customized educational study tours and professional visits for schools, universities, educational organizations, and government agencies.",
+    points: [
+      "School Visits",
+      "School District Visits",
+      "University Visits",
+      "Educational Conferences",
+      "Professional Networking",
+      "Classroom Observation",
+      "Best Practice Sharing",
+      "Customized Educational Itineraries",
+    ],
+  },
+  {
+    img: steamImg,
+    eyebrow: "05 · Partnerships",
+    title: "International Educator Exchange Programs",
+    body: "Building long-term educational partnerships through meaningful international collaboration and cultural exchange.",
+    points: [
+      "Cross-Cultural Learning",
+      "School Partnerships",
+      "Academic Collaboration",
+      "Joint Educational Projects",
+      "International Networking",
+      "Educational Research Opportunities",
+      "Professional Exchange Experiences",
     ],
   },
 ];
@@ -104,18 +122,19 @@ function ProgramsPage() {
           <Reveal>
             <div className="eyebrow">
               <span className="gold-rule" />
-              Our programs
+              Programs & Services
             </div>
           </Reveal>
           <Reveal delay={100}>
             <h1 className="mt-5 font-display text-5xl md:text-7xl leading-[1.02] max-w-4xl text-primary">
-              Programs designed around the student, not the system.
+              Five program areas serving global education.
             </h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-7 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              Every Oxford Venture program is built on the same belief — that meaningful mentorship,
-              personalized to the student, produces lasting academic and personal growth.
+              Oxford Venture Inc. designs and delivers programs for students,
+              educators, school leaders, and educational organizations seeking
+              authentic Canadian educational experiences in British Columbia.
             </p>
           </Reveal>
         </div>
@@ -156,7 +175,7 @@ function ProgramsPage() {
                     {p.title}
                   </h2>
                   <p className="mt-6 text-foreground/80 leading-relaxed">{p.body}</p>
-                  <ul className="mt-8 space-y-3">
+                  <ul className="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-3">
                     {p.points.map((pt) => (
                       <li key={pt} className="flex items-start gap-3 text-sm text-foreground/80">
                         <span className="mt-2 w-1 h-1 rounded-full bg-gold flex-shrink-0" />
@@ -168,7 +187,7 @@ function ProgramsPage() {
                     to="/contact"
                     className="mt-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-primary link-underline"
                   >
-                    Inquire about this program <ArrowRight size={12} />
+                    Learn More <ArrowRight size={12} />
                   </Link>
                 </div>
               </article>

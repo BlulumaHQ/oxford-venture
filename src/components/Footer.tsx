@@ -10,7 +10,7 @@ export function Footer() {
           <div className="lg:col-span-5">
             <img src={logoWhite} alt="Oxford Venture Inc." className="h-16 md:h-24 w-auto mb-4" />
             <p className="hidden md:block text-primary-foreground/70 max-w-md leading-relaxed text-sm">
-              Personalized academic mentorship, university pathway planning, and STEAM enrichment for ambitious students.
+              Connecting global students, educators, and school leaders with authentic Canadian educational experiences across British Columbia.
             </p>
           </div>
 
@@ -19,8 +19,7 @@ export function Footer() {
             <ul className="grid grid-cols-2 gap-x-5 gap-y-2 text-sm">
               {[
                 ["/programs", "Programs"],
-                ["/university-pathways", "University Pathways"],
-                ["/steam", "STEAM Programs"],
+                ["/leadership", "Leadership"],
                 ["/about", "About"],
                 ["/contact", "Contact"],
               ].map(([to, label]) => (
@@ -42,7 +41,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={14} className="text-gold" />
-                <a href="mailto:info@educationbc.ca" className="link-underline">info@educationbc.ca</a>
+                <a href="mailto:info@oxfordventure.ca" className="link-underline">info@oxfordventure.ca</a>
               </li>
             </ul>
             <div className="flex gap-3 mt-4">

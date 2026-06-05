@@ -118,7 +118,7 @@ function ContactPage() {
                   <Mail size={18} className="text-gold mt-1" />
                   <div>
                     <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Email</div>
-                    <a href="mailto:info@educationbc.ca" className="font-display text-2xl text-primary link-underline">info@educationbc.ca</a>
+                    <a href="mailto:info@oxfordventure.ca" className="font-display text-2xl text-primary link-underline">info@oxfordventure.ca</a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
