@@ -7,8 +7,7 @@ import logoWhite from "@/assets/logo-white.png";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/programs", label: "Programs" },
-  { to: "/university-pathways", label: "University Pathways" },
-  { to: "/steam", label: "STEAM" },
+  { to: "/leadership", label: "Leadership" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
