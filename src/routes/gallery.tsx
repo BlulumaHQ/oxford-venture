@@ -24,6 +24,16 @@ import img17 from "@/assets/gallery/oxford-education024.webp.asset.json";
 import img18 from "@/assets/gallery/oxford-education025.webp.asset.json";
 import img19 from "@/assets/gallery/oxford-education026.webp.asset.json";
 import img20 from "@/assets/gallery/oxford-education027.webp.asset.json";
+import img21 from "@/assets/gallery/oxford-education-011.webp.asset.json";
+import img22 from "@/assets/gallery/oxford-education-013.webp.asset.json";
+import img23 from "@/assets/gallery/oxford-education-016.webp.asset.json";
+import img24 from "@/assets/gallery/oxford-education-017.webp.asset.json";
+import img25 from "@/assets/gallery/oxford-education-018.webp.asset.json";
+import img26 from "@/assets/gallery/oxford-education-020.webp.asset.json";
+import img27 from "@/assets/gallery/oxford-education-021.webp.asset.json";
+import img28 from "@/assets/gallery/oxford-education-022.webp.asset.json";
+import img29 from "@/assets/gallery/oxford-education-023.webp.asset.json";
+import img30 from "@/assets/gallery/oxford-education-028.webp.asset.json";
 
 const allPhotos = [
   { src: img1.url, caption: "Welcoming international students to Canada" },
@@ -46,7 +56,18 @@ const allPhotos = [
   { src: img18.url, caption: "Engineering & robotics learning lab" },
   { src: img19.url, caption: "Evening cultural program by the water" },
   { src: img20.url, caption: "Campfire moments — Canadian outdoor experience" },
+  { src: img21.url, caption: "Canada Day celebration with students" },
+  { src: img22.url, caption: "Guided forest walk — BC nature program" },
+  { src: img23.url, caption: "International students bonding on program" },
+  { src: img24.url, caption: "Exploring downtown Vancouver in winter" },
+  { src: img25.url, caption: "Students relaxing between activities" },
+  { src: img26.url, caption: "Evening outing in downtown Vancouver" },
+  { src: img27.url, caption: "Student group at Gastown steam clock" },
+  { src: img28.url, caption: "STEAM engineering build challenge" },
+  { src: img29.url, caption: "Summer fair excursion with students" },
+  { src: img30.url, caption: "Summer camp in Canada — chalkboard welcome" },
 ];
+
 
 function shuffle<T>(arr: T[]): T[] {
   const a = arr.slice();
