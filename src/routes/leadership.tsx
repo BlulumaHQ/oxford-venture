@@ -79,12 +79,12 @@ const professional = [
 
 const tours = [
   {
-    img: campusImg,
+    img: tourStudyImg,
     title: "Educational Study Tours",
     body: "Customized professional visits combining classroom observation, leader briefings, university stops, and cultural programming across British Columbia.",
   },
   {
-    img: universityImg,
+    img: tourSchoolImg,
     title: "School Visits",
     body: "Structured visits to public and independent schools, including classroom observation and meetings with teaching staff and administration.",
   },
@@ -94,12 +94,12 @@ const tours = [
     body: "Meetings with school district leadership and international education offices to understand B.C.'s system, governance, and partnership models.",
   },
   {
-    img: mentorshipImg,
+    img: tourDelegationImg,
     title: "Customized Delegations",
     body: "Delegation programs designed for ministries, bureaus, foundations, and educational organizations — tailored agendas and logistical support end-to-end.",
   },
   {
-    img: steamImg,
+    img: tourExchangeImg,
     title: "Professional Exchange Programs",
     body: "Two-way professional exchanges that pair international educators and leaders with B.C. partner institutions for sustained collaboration.",
   },
