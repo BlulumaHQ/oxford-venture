@@ -74,6 +74,14 @@ const allPhotos = [
   { src: img28.url, caption: "STEAM engineering build challenge" },
   { src: img29.url, caption: "Summer fair excursion with students" },
   { src: img30.url, caption: "Summer camp in Canada — chalkboard welcome" },
+  { src: img31.url, caption: "Chinese principal delegation visit — BCIT" },
+  { src: img32.url, caption: "Thank-you moment with a partner educator" },
+  { src: img33.url, caption: "Educator gathering — Mission Springs" },
+  { src: img34.url, caption: "Art, Music & Education Community Event — O.V.I." },
+  { src: img35.url, caption: "Celebration treats at a community event" },
+  { src: img36.url, caption: "O.V.I. consultancy showcase — academic guidance & STEAM" },
+  { src: img37.url, caption: "Bouquet of thanks from program partners" },
+  { src: img38.url, caption: "Salmon hatchery field study with students" },
 ];
 
 
