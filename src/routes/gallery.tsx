@@ -34,6 +34,14 @@ import img27 from "@/assets/gallery/oxford-education-021.webp.asset.json";
 import img28 from "@/assets/gallery/oxford-education-022.webp.asset.json";
 import img29 from "@/assets/gallery/oxford-education-023.webp.asset.json";
 import img30 from "@/assets/gallery/oxford-education-028.webp.asset.json";
+import img31 from "@/assets/gallery/oxford-education-001.webp.asset.json";
+import img32 from "@/assets/gallery/oxford-education-002.webp.asset.json";
+import img33 from "@/assets/gallery/oxford-education-003.webp.asset.json";
+import img34 from "@/assets/gallery/oxford-education-005.webp.asset.json";
+import img35 from "@/assets/gallery/oxford-education-006.webp.asset.json";
+import img36 from "@/assets/gallery/oxford-education-009.webp.asset.json";
+import img37 from "@/assets/gallery/oxford-education-010.webp.asset.json";
+import img38 from "@/assets/gallery/oxford-education-014.webp.asset.json";
 
 const allPhotos = [
   { src: img1.url, caption: "Welcoming international students to Canada" },
