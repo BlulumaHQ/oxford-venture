@@ -80,6 +80,7 @@ export const Route = createFileRoute("/gallery")({
 });
 
 function GalleryPage() {
+  const photos = useMemo(() => shuffle(allPhotos), []);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const close = useCallback(() => setOpenIndex(null), []);
