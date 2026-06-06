@@ -364,6 +364,15 @@ function HomePage() {
                 that support educational excellence worldwide.
               </p>
             </div>
+
+            <Reveal delay={200}>
+              <blockquote className="mt-10 font-display text-xl md:text-2xl text-primary-foreground/90 leading-snug italic border-l-2 border-gold/60 pl-6">
+                "Some people dream of success… while others wake up and work hard at it."
+              </blockquote>
+              <div className="mt-3 text-xs tracking-[0.2em] uppercase text-primary-foreground/60 pl-6">
+                — Mark Zuckerberg
+              </div>
+            </Reveal>
           </div>
 
           <div className="mt-16 md:mt-20 grid grid-cols-2 lg:grid-cols-4 border-t border-primary-foreground/15">
