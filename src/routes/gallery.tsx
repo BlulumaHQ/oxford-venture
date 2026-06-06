@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useMemo, useState, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { PageShell } from "@/components/Shared";
 import { Reveal } from "@/components/Reveal";
@@ -14,8 +14,18 @@ import img7 from "@/assets/gallery/steam-teacher-033.webp.asset.json";
 import img8 from "@/assets/gallery/steam-principal-003.webp.asset.json";
 import img9 from "@/assets/gallery/oxford-education-012.webp.asset.json";
 import img10 from "@/assets/gallery/oxford-education-004.webp.asset.json";
+import img11 from "@/assets/gallery/steam-teacher-program-028.webp.asset.json";
+import img12 from "@/assets/gallery/steam-teacher-program-029.webp.asset.json";
+import img13 from "@/assets/gallery/steam-teacher-program-030.webp.asset.json";
+import img14 from "@/assets/gallery/steam-teacher-program-032.webp.asset.json";
+import img15 from "@/assets/gallery/steam-teacher-program-034.webp.asset.json";
+import img16 from "@/assets/gallery/steam-principal-program-004.webp.asset.json";
+import img17 from "@/assets/gallery/oxford-education024.webp.asset.json";
+import img18 from "@/assets/gallery/oxford-education025.webp.asset.json";
+import img19 from "@/assets/gallery/oxford-education026.webp.asset.json";
+import img20 from "@/assets/gallery/oxford-education027.webp.asset.json";
 
-const photos = [
+const allPhotos = [
   { src: img1.url, caption: "Welcoming international students to Canada" },
   { src: img2.url, caption: "Teacher professional development workshop" },
   { src: img3.url, caption: "Senior principal leadership training" },
@@ -26,7 +36,27 @@ const photos = [
   { src: img8.url, caption: "Hands-on workshop activity" },
   { src: img9.url, caption: "Summer student program — community outing" },
   { src: img10.url, caption: "Educators connecting across cultures" },
+  { src: img11.url, caption: "Mentorship moment with a student teacher" },
+  { src: img12.url, caption: "Student artwork display — winter night studies" },
+  { src: img13.url, caption: "Why does STEAM education matter?" },
+  { src: img14.url, caption: "Adding more S.T.E.A.M. to teaching" },
+  { src: img15.url, caption: "Student chalk art — Aurora Borealis" },
+  { src: img16.url, caption: "Principal team-building challenge" },
+  { src: img17.url, caption: "Summer beach day with student program" },
+  { src: img18.url, caption: "Engineering & robotics learning lab" },
+  { src: img19.url, caption: "Evening cultural program by the water" },
+  { src: img20.url, caption: "Campfire moments — Canadian outdoor experience" },
 ];
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -50,6 +80,7 @@ export const Route = createFileRoute("/gallery")({
 });
 
 function GalleryPage() {
+  const photos = useMemo(() => shuffle(allPhotos), []);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const close = useCallback(() => setOpenIndex(null), []);
