@@ -158,7 +158,7 @@ function GalleryPage() {
           <div className="mt-20 md:mt-24 py-14 md:py-16 bg-muted/40 border-y border-border -mx-4 px-4 md:mx-0 md:px-0">
             <div className="max-w-4xl mx-auto text-center">
               <Reveal>
-                <blockquote className="font-display text-2xl md:text-3xl text-primary leading-snug italic">
+                <blockquote className="font-display text-lg md:text-xl lg:text-2xl text-primary leading-snug italic lg:whitespace-nowrap">
                   "Some people dream of success… while others wake up and work hard at it."
                 </blockquote>
                 <div className="mt-5 text-xs tracking-[0.2em] uppercase text-gold">
