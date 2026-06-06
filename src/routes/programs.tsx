@@ -5,17 +5,11 @@ import { ArrowRight } from "lucide-react";
 
 import bgGeo1 from "@/assets/bg-geo-1.jpg";
 import bgGeoCorner from "@/assets/bg-geo-corner.jpg";
-import studentsImg from "@/assets/gallery/oxford-education-019.webp.asset.json";
-import teacherImgNew from "@/assets/gallery/steam-teacher-027.webp.asset.json";
-import principalImg from "@/assets/gallery/senior-principal-training.webp.asset.json";
-import delegationImg from "@/assets/gallery/steam-principal-002.webp.asset.json";
-import partnershipImg from "@/assets/gallery/steam-principal-001.webp.asset.json";
-
-const universityImg = studentsImg.url;
-const teacherImg = teacherImgNew.url;
-const mentorshipImg = principalImg.url;
-const campusImg = delegationImg.url;
-const steamImg = partnershipImg.url;
+const universityImg = "/gallery/oxford-education-019.webp";
+const teacherImg = "/gallery/steam-teacher-027.webp";
+const mentorshipImg = "/gallery/senior-principal-training.webp";
+const campusImg = "/gallery/steam-principal-002.webp";
+const steamImg = "/gallery/steam-principal-001.webp";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
