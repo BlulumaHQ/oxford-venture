@@ -4,13 +4,29 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ArrowRight } from "lucide-react";
 
-import teacherImg from "@/assets/teacher-training.jpg";
-import mentorshipImg from "@/assets/mentorship.jpg";
-import campusImg from "@/assets/campus.jpg";
-import universityImg from "@/assets/university.jpg";
-import steamImg from "@/assets/steam.jpg";
-import graduationImg from "@/assets/graduation.jpg";
 import bgGeo2 from "@/assets/bg-geo-2.jpg";
+import teacher031 from "@/assets/gallery/steam-teacher-031.webp.asset.json";
+import teacher027 from "@/assets/gallery/steam-teacher-027.webp.asset.json";
+import teacher033 from "@/assets/gallery/steam-teacher-033.webp.asset.json";
+import seniorPrincipal from "@/assets/gallery/senior-principal-training.webp.asset.json";
+import principal001 from "@/assets/gallery/steam-principal-001.webp.asset.json";
+import principal002 from "@/assets/gallery/steam-principal-002.webp.asset.json";
+import principal003 from "@/assets/gallery/steam-principal-003.webp.asset.json";
+import oxford004 from "@/assets/gallery/oxford-education-004.webp.asset.json";
+import oxford012 from "@/assets/gallery/oxford-education-012.webp.asset.json";
+import oxford019 from "@/assets/gallery/oxford-education-019.webp.asset.json";
+
+const teacherImg = teacher031.url;
+const mentorshipImg = seniorPrincipal.url;
+const campusImg = principal002.url;
+const steamImg = principal003.url;
+const universityImg = oxford004.url;
+const graduationImg = teacher027.url;
+// secondary tour images
+const tourSchoolImg = teacher033.url;
+const tourDelegationImg = principal001.url;
+const tourExchangeImg = oxford019.url;
+const tourStudyImg = oxford012.url;
 
 export const Route = createFileRoute("/leadership")({
   head: () => ({
