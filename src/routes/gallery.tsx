@@ -147,7 +147,7 @@ function GalleryPage() {
                     src={p.src}
                     alt={p.caption}
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors" />
                 </button>
