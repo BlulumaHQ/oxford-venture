@@ -34,6 +34,14 @@ import img27 from "@/assets/gallery/oxford-education-021.webp.asset.json";
 import img28 from "@/assets/gallery/oxford-education-022.webp.asset.json";
 import img29 from "@/assets/gallery/oxford-education-023.webp.asset.json";
 import img30 from "@/assets/gallery/oxford-education-028.webp.asset.json";
+import img31 from "@/assets/gallery/oxford-education-001.webp.asset.json";
+import img32 from "@/assets/gallery/oxford-education-002.webp.asset.json";
+import img33 from "@/assets/gallery/oxford-education-003.webp.asset.json";
+import img34 from "@/assets/gallery/oxford-education-005.webp.asset.json";
+import img35 from "@/assets/gallery/oxford-education-006.webp.asset.json";
+import img36 from "@/assets/gallery/oxford-education-009.webp.asset.json";
+import img37 from "@/assets/gallery/oxford-education-010.webp.asset.json";
+import img38 from "@/assets/gallery/oxford-education-014.webp.asset.json";
 
 const allPhotos = [
   { src: img1.url, caption: "Welcoming international students to Canada" },
@@ -66,6 +74,14 @@ const allPhotos = [
   { src: img28.url, caption: "STEAM engineering build challenge" },
   { src: img29.url, caption: "Summer fair excursion with students" },
   { src: img30.url, caption: "Summer camp in Canada — chalkboard welcome" },
+  { src: img31.url, caption: "Chinese principal delegation visit — BCIT" },
+  { src: img32.url, caption: "Thank-you moment with a partner educator" },
+  { src: img33.url, caption: "Educator gathering — Mission Springs" },
+  { src: img34.url, caption: "Art, Music & Education Community Event — O.V.I." },
+  { src: img35.url, caption: "Celebration treats at a community event" },
+  { src: img36.url, caption: "O.V.I. consultancy showcase — academic guidance & STEAM" },
+  { src: img37.url, caption: "Bouquet of thanks from program partners" },
+  { src: img38.url, caption: "Salmon hatchery field study with students" },
 ];
 
 
