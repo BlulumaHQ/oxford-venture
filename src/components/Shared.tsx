@@ -16,33 +16,45 @@ export function ConsultationCTA() {
       />
       <div className="absolute inset-0 bg-primary/80" />
       <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/70 to-primary/40" />
-      <div className="relative container-luxe py-28 md:py-40 text-primary-foreground">
-        <div className="max-w-3xl">
-          <Reveal>
-            <div className="eyebrow text-primary-foreground/70 mb-5">
-              <span className="gold-rule" />Begin the conversation
-            </div>
-          </Reveal>
-          <Reveal delay={100}>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-primary-foreground">
-              Let's build a stronger future, together.
-            </h2>
-          </Reveal>
+      <div className="relative container-luxe py-20 md:py-32 text-primary-foreground">
+        <div className="grid gap-10 lg:gap-16 lg:grid-cols-12 items-center">
+          <div className="lg:col-span-7">
+            <Reveal>
+              <div className="eyebrow text-primary-foreground/70 mb-5">
+                <span className="gold-rule" />Begin the conversation
+              </div>
+            </Reveal>
+            <Reveal delay={100}>
+              <h2 className="font-display text-4xl md:text-6xl leading-[1.05] text-primary-foreground">
+                Let's build a stronger future, together.
+              </h2>
+            </Reveal>
+            <Reveal delay={200}>
+              <p className="mt-6 text-base md:text-lg text-primary-foreground/80 max-w-xl leading-relaxed">
+                Book a personalized consultation and discover how Oxford Venture
+                can support your child's academic journey and long-term goals.
+              </p>
+            </Reveal>
+            <Reveal delay={300}>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link to="/contact" className="btn-primary bg-gold border-gold text-gold-foreground">
+                  Schedule a Consultation
+                </Link>
+                <Link to="/contact" className="btn-ghost text-primary-foreground border-primary-foreground/40 hover:bg-primary-foreground/10">
+                  Contact Us
+                </Link>
+              </div>
+            </Reveal>
+          </div>
           <Reveal delay={200}>
-            <p className="mt-6 text-lg text-primary-foreground/80 max-w-xl leading-relaxed">
-              Book a personalized consultation and discover how Oxford Venture
-              can support your child's academic journey and long-term goals.
-            </p>
-          </Reveal>
-          <Reveal delay={300}>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link to="/contact" className="btn-primary bg-gold border-gold text-gold-foreground">
-                Schedule a Consultation
-              </Link>
-              <Link to="/contact" className="btn-ghost text-primary-foreground border-primary-foreground/40 hover:bg-primary-foreground/10">
-                Contact Us
-              </Link>
-            </div>
+            <aside className="lg:col-span-5 lg:pl-10 lg:border-l lg:border-gold/40">
+              <blockquote className="font-display text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 leading-snug italic">
+                "An investment in education always pays the best interest."
+              </blockquote>
+              <div className="mt-4 text-[10px] tracking-[0.25em] uppercase text-gold">
+                — Benjamin Franklin
+              </div>
+            </aside>
           </Reveal>
         </div>
       </div>
