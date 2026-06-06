@@ -151,6 +151,19 @@ function ContactPage() {
         </div>
       </section>
 
+      <section className="py-14 md:py-16 bg-muted/40 border-y border-border">
+        <div className="container-luxe max-w-4xl text-center">
+          <Reveal>
+            <blockquote className="font-display text-2xl md:text-3xl text-primary leading-snug italic">
+              "An investment in education always pays the best interest."
+            </blockquote>
+            <div className="mt-5 text-xs tracking-[0.2em] uppercase text-gold">
+              — Benjamin Franklin
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="py-24 md:py-32 bg-background bg-no-repeat bg-cover bg-top" style={{ backgroundImage: `url(${bgGeo2})` }}>
         <div className="container-luxe">
           <SectionHeading eyebrow="Frequently asked" title="Questions families often ask." />

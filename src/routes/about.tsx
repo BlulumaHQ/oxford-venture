@@ -102,6 +102,17 @@ function AboutPage() {
               </p>
             </div>
 
+            <div className="border-l-2 border-gold/30 pl-8 py-2">
+              <Reveal>
+                <blockquote className="font-display text-2xl md:text-3xl text-primary leading-snug italic">
+                  "An investment in education always pays the best interest."
+                </blockquote>
+                <div className="mt-4 text-xs tracking-[0.2em] uppercase text-gold">
+                  — Benjamin Franklin
+                </div>
+              </Reveal>
+            </div>
+
             <div>
               <div className="eyebrow"><span className="gold-rule" />Our values</div>
               <h2 className="mt-5 font-display text-3xl md:text-4xl text-primary leading-tight">What guides our practice.</h2>

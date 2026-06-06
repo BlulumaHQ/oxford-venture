@@ -5,6 +5,16 @@ import logoWhite from "@/assets/logo-white.png";
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
+      <div className="border-b border-primary-foreground/10">
+        <div className="container-luxe py-10 md:py-12 text-center">
+          <blockquote className="font-display text-lg md:text-xl text-primary-foreground/80 leading-snug italic max-w-2xl mx-auto">
+            "An investment in education always pays the best interest."
+          </blockquote>
+          <div className="mt-3 text-[10px] tracking-[0.2em] uppercase text-primary-foreground/50">
+            — Benjamin Franklin
+          </div>
+        </div>
+      </div>
       <div className="container-luxe py-10 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-12 lg:gap-10 items-start">
           <div className="lg:col-span-5">

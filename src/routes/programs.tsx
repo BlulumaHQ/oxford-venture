@@ -152,7 +152,22 @@ function ProgramsPage() {
         />
         <div className="container-luxe space-y-24 md:space-y-32">
           {programs.map((p, i) => (
-            <Reveal key={p.title}>
+            <div key={p.title}>
+              {i === 2 && (
+                <div className="my-20 md:my-24 py-14 md:py-16 bg-muted/40 border-y border-border">
+                  <div className="container-luxe max-w-4xl text-center">
+                    <Reveal>
+                      <blockquote className="font-display text-2xl md:text-3xl text-primary leading-snug italic">
+                        "Some people dream of success… while others wake up and work hard at it."
+                      </blockquote>
+                      <div className="mt-5 text-xs tracking-[0.2em] uppercase text-gold">
+                        — Mark Zuckerberg
+                      </div>
+                    </Reveal>
+                  </div>
+                </div>
+              )}
+              <Reveal>
               <article
                 className={`relative grid lg:grid-cols-12 gap-10 lg:gap-16 items-center ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}
               >
@@ -192,6 +207,7 @@ function ProgramsPage() {
                 </div>
               </article>
             </Reveal>
+            </div>
           ))}
         </div>
       </section>
