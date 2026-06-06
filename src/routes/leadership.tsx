@@ -4,13 +4,29 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ArrowRight } from "lucide-react";
 
-import teacherImg from "@/assets/teacher-training.jpg";
-import mentorshipImg from "@/assets/mentorship.jpg";
-import campusImg from "@/assets/campus.jpg";
-import universityImg from "@/assets/university.jpg";
-import steamImg from "@/assets/steam.jpg";
-import graduationImg from "@/assets/graduation.jpg";
 import bgGeo2 from "@/assets/bg-geo-2.jpg";
+import teacher031 from "@/assets/gallery/steam-teacher-031.webp.asset.json";
+import teacher027 from "@/assets/gallery/steam-teacher-027.webp.asset.json";
+import teacher033 from "@/assets/gallery/steam-teacher-033.webp.asset.json";
+import seniorPrincipal from "@/assets/gallery/senior-principal-training.webp.asset.json";
+import principal001 from "@/assets/gallery/steam-principal-001.webp.asset.json";
+import principal002 from "@/assets/gallery/steam-principal-002.webp.asset.json";
+import principal003 from "@/assets/gallery/steam-principal-003.webp.asset.json";
+import oxford004 from "@/assets/gallery/oxford-education-004.webp.asset.json";
+import oxford012 from "@/assets/gallery/oxford-education-012.webp.asset.json";
+import oxford019 from "@/assets/gallery/oxford-education-019.webp.asset.json";
+
+const teacherImg = teacher031.url;
+const mentorshipImg = seniorPrincipal.url;
+const campusImg = principal002.url;
+const steamImg = principal003.url;
+const universityImg = oxford004.url;
+const graduationImg = teacher027.url;
+// secondary tour images
+const tourSchoolImg = teacher033.url;
+const tourDelegationImg = principal001.url;
+const tourExchangeImg = oxford019.url;
+const tourStudyImg = oxford012.url;
 
 export const Route = createFileRoute("/leadership")({
   head: () => ({
@@ -63,12 +79,12 @@ const professional = [
 
 const tours = [
   {
-    img: campusImg,
+    img: tourStudyImg,
     title: "Educational Study Tours",
     body: "Customized professional visits combining classroom observation, leader briefings, university stops, and cultural programming across British Columbia.",
   },
   {
-    img: universityImg,
+    img: tourSchoolImg,
     title: "School Visits",
     body: "Structured visits to public and independent schools, including classroom observation and meetings with teaching staff and administration.",
   },
@@ -78,12 +94,12 @@ const tours = [
     body: "Meetings with school district leadership and international education offices to understand B.C.'s system, governance, and partnership models.",
   },
   {
-    img: mentorshipImg,
+    img: tourDelegationImg,
     title: "Customized Delegations",
     body: "Delegation programs designed for ministries, bureaus, foundations, and educational organizations — tailored agendas and logistical support end-to-end.",
   },
   {
-    img: steamImg,
+    img: tourExchangeImg,
     title: "Professional Exchange Programs",
     body: "Two-way professional exchanges that pair international educators and leaders with B.C. partner institutions for sustained collaboration.",
   },
