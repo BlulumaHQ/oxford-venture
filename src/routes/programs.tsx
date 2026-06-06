@@ -207,6 +207,7 @@ function ProgramsPage() {
                 </div>
               </article>
             </Reveal>
+            </div>
           ))}
         </div>
       </section>
