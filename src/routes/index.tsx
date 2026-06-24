@@ -154,19 +154,19 @@ const gallery = [
 
 const testimonials = [
   {
-    text: "The program gave me a real glimpse into Canadian classroom life — the host school, the teachers, and the students all made it unforgettable.",
+    text: "The academic mentorship gave me the structure and confidence I needed to thrive in the BC curriculum and reach my university goals.",
+    name: "Grade 12 Student",
+    role: "Academic Guidance",
+  },
+  {
+    text: "From shaping my portfolio to refining every essay, Oxford Venture's team made the application process feel clear and achievable.",
+    name: "Admitted University Student",
+    role: "University Application Assistance",
+  },
+  {
+    text: "The summer program gave me a real glimpse into Canadian classroom life — the host school, the teachers, and the students all made it unforgettable.",
     name: "International Student Participant",
-    role: "Short-Term Study Program",
-  },
-  {
-    text: "The professional development sessions reshaped how I approach inquiry-based learning in my own classroom back home.",
-    name: "Visiting Teacher",
-    role: "Teacher Professional Development",
-  },
-  {
-    text: "Observing British Columbia school leadership in practice gave our delegation new frameworks we are now applying district-wide.",
-    name: "Visiting Principal",
-    role: "Principal Leadership Development",
+    role: "Short Program",
   },
   {
     text: "Every visit, school meeting, and observation was thoughtfully arranged. A genuinely substantive professional study tour.",
@@ -179,9 +179,9 @@ const testimonials = [
     role: "International School Partnership",
   },
   {
-    text: "From curriculum framing to classroom strategies, the program offered the kind of depth our teaching team had been looking for.",
-    name: "International Educator",
-    role: "Educator Exchange Program",
+    text: "A genuinely customized winter program — the cultural activities and classroom time were both rich and well-paced for our group.",
+    name: "Visiting Educator",
+    role: "Customized Short Program",
   },
 ];
 
