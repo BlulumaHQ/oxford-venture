@@ -67,24 +67,28 @@ function AboutPage() {
               <h2 className="mt-5 font-display text-4xl md:text-5xl text-primary leading-tight">About Oxford Venture Inc.</h2>
               <div className="mt-7 space-y-5 text-foreground/85 leading-relaxed text-[1.03rem]">
                 <p>
-                  Oxford Venture Inc. is dedicated to creating meaningful
-                  educational experiences that connect students, educators,
-                  school leaders, and educational organizations with the
-                  British Columbia education system.
+                  Oxford Venture Inc. has been well-recognized in academic
+                  guidance, university application assistance, and the design
+                  of short programs for students and educators.
                 </p>
                 <p>
-                  Through international partnerships, educational exchange
-                  programs, professional development initiatives, leadership
-                  training, and customized educational experiences, Oxford
-                  Venture Inc. promotes lifelong learning, global citizenship,
-                  and educational excellence.
+                  The CEO and President of Oxford Venture Inc., Mrs. Martin,
+                  has over 25 years of experience in the British Columbia
+                  education industry. Working with a team of more than 50
+                  teachers, Mrs. Martin uses her unique teaching methods and
+                  warm, friendly approach to help students DISCOVER THEIR
+                  POTENTIAL.
                 </p>
                 <p>
-                  For more than two decades, we have worked with schools,
-                  school districts, educational institutions, government
-                  agencies, and international partners to build lasting
-                  educational relationships that create positive outcomes for
-                  participants around the world.
+                  With passion and care, Mrs. Martin has guided many students
+                  to successfully complete high school and gain admission to
+                  well-known universities across Canada, the United States,
+                  and the United Kingdom.
+                </p>
+                <p>
+                  By encouraging every student to express their feelings and
+                  share their opinions, Mrs. Martin treats her students as
+                  part of the Oxford Venture Inc. family.
                 </p>
               </div>
             </div>
