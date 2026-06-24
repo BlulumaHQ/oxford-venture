@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Student programs, educator training, leadership development, study tours, and international partnerships across British Columbia.",
+          "Academic guidance, university application assistance, short programs, study tours, and international partnerships across British Columbia.",
       },
       { property: "og:image", content: heroStudent },
       { property: "twitter:image", content: heroStudent },
