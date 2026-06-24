@@ -18,13 +18,13 @@ export const Route = createFileRoute("/programs")({
       {
         name: "description",
         content:
-          "International student programs, teacher professional development, principal leadership training, educational study tours, and international educator exchange programs across British Columbia.",
+          "Academic guidance, university application assistance, short programs, educational study tours, and international educator exchange programs across British Columbia.",
       },
       { property: "og:title", content: "Programs & Services — Oxford Venture Inc." },
       {
         property: "og:description",
         content:
-          "Five program areas connecting global students, educators, school leaders, and organizations with Canadian educational experiences.",
+          "Five program areas serving students, educators, and partner institutions seeking authentic Canadian educational experiences.",
       },
       { property: "og:image", content: universityImg },
     ],
