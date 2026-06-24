@@ -40,9 +40,9 @@ export const Route = createFileRoute("/")({
 });
 
 const highlights = [
-  "International Student Programs",
-  "Teacher Professional Development",
-  "Principal Leadership Training",
+  "Academic Guidance",
+  "University Application Assistance",
+  "Short Programs · Summer & Winter Camps",
   "Educational Study Tours",
   "International Educator Exchanges",
   "School District Partnerships",
