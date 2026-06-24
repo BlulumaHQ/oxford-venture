@@ -144,9 +144,9 @@ const impactStats = [
 ];
 
 const gallery = [
-  { img: universityImg, label: "Student Programs", span: "lg:row-span-2 lg:col-span-2" },
-  { img: teacherImg, label: "Teacher Training", span: "" },
-  { img: mentorshipImg, label: "Principal Leadership Programs", span: "" },
+  { img: universityImg, label: "Academic Guidance", span: "lg:row-span-2 lg:col-span-2" },
+  { img: teacherImg, label: "University Application Support", span: "" },
+  { img: mentorshipImg, label: "Short Programs", span: "" },
   { img: campusImg, label: "Educational Delegations", span: "lg:col-span-2" },
   { img: graduationImg, label: "School District Partnerships", span: "" },
   { img: steamImg, label: "Cultural Exchange Activities", span: "" },
