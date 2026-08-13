@@ -5,7 +5,6 @@ import { PageShell } from "@/components/Shared";
 import { Reveal } from "@/components/Reveal";
 
 const allPhotos = [
-  { src: "/gallery/oxford-education-019.webp", caption: "Welcoming international students to Canada" },
   { src: "/gallery/steam-teacher-027.webp", caption: "Teacher professional development workshop" },
   { src: "/gallery/senior-principal-training.webp", caption: "Senior principal leadership training" },
   { src: "/gallery/steam-principal-002.webp", caption: "Certificate ceremony — Maple Ridge–Pitt Meadows School District 42" },
