@@ -124,12 +124,13 @@ function ContactPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
-                  <Mail size={18} className="text-gold mt-1" />
+                  <WhatsAppIcon size={18} className="text-gold mt-1" />
                   <div>
-                    <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Email</div>
-                    <a href="mailto:info@oxfordventure.ca" className="font-display text-2xl text-primary link-underline">info@oxfordventure.ca</a>
+                    <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">WhatsApp</div>
+                    <a href="https://wa.me/17788896469" target="_blank" rel="noopener noreferrer" className="font-display text-2xl text-primary link-underline">+1 (778) 889-6469</a>
                   </div>
                 </li>
+
                 <li className="flex items-start gap-4">
                   <MapPin size={18} className="text-gold mt-1" />
                   <div>
