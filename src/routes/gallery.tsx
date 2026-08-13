@@ -25,7 +25,7 @@ const allPhotos = [
   { src: "/gallery/oxford-education-025.webp", caption: "Engineering & robotics learning lab" },
   { src: "/gallery/oxford-education-026.webp", caption: "Evening cultural program by the water" },
   { src: "/gallery/oxford-education-027.webp", caption: "Campfire moments — Canadian outdoor experience" },
-  { src: "/gallery/oxford-education-011.webp", caption: "Canada Day celebration with students" },
+  
   { src: "/gallery/oxford-education-013.webp", caption: "Guided forest walk — BC nature program" },
   { src: "/gallery/oxford-education-016.webp", caption: "International students bonding on program" },
   { src: "/gallery/oxford-education-017.webp", caption: "Exploring downtown Vancouver in winter" },

@@ -256,31 +256,38 @@ function HomePage() {
         <div className="container-luxe">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             <div className="lg:col-span-5">
-              <SectionHeading
-                eyebrow="Why Oxford Venture"
-                title="More Than Student Recruitment"
-              />
+              <Reveal>
+                <div className="eyebrow mb-5">
+                  <span className="gold-rule" />
+                  Why Oxford Venture
+                </div>
+              </Reveal>
+              <Reveal delay={80}>
+                <h2 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] text-primary">
+                  A Trusted Educational Partner.
+                </h2>
+              </Reveal>
             </div>
             <div className="lg:col-span-7">
               <Reveal>
-                <div className="space-y-5 text-foreground/85 leading-relaxed text-[1.03rem]">
+                <div className="space-y-5 text-foreground/85 leading-relaxed text-lg md:text-xl">
                   <p>
-                    Oxford Venture Inc. provides educational experiences that
-                    extend far beyond traditional student placement services.
+                    Oxford Venture Inc. creates educational experiences that
+                    connect students, teachers, principals, and educational
+                    organizations with authentic Canadian learning opportunities.
                   </p>
                   <p>
-                    We work with students, teachers, principals, educational
-                    organizations, government agencies, and international
-                    partners to create meaningful learning opportunities that
-                    promote educational excellence, leadership development, and
-                    global collaboration.
+                    We work alongside families, schools, government agencies, and
+                    international partners to build meaningful programs that
+                    promote academic excellence, leadership development, and
+                    global collaboration across British Columbia.
                   </p>
                 </div>
               </Reveal>
               <Reveal delay={150}>
                 <ul className="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-3">
                   {highlights.map((h) => (
-                    <li key={h} className="flex items-start gap-3 text-sm text-foreground/85">
+                    <li key={h} className="flex items-start gap-3 text-base text-foreground/85">
                       <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
                       {h}
                     </li>
@@ -291,6 +298,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* PROGRAMS */}
       <section className="py-24 md:py-32 bg-muted/40">
